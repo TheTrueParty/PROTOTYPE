@@ -53,7 +53,7 @@ nav#top a:link, a:visited {
     font-weight:bold;
     }
 nav#top a:hover {
-    background-color:#1623a8;  /*creates a bg color for hover state of button*/
+    background-color:#ff8300;  /*creates a bg color for hover state of button*/
 }
 /******************main content area***********************/
 section#container {  /*container for atricle and nav*/
