@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+
+<html lang = "en">
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" type="text/css" href="signup.css">
+    </head>
+    
+    <body>
+        <h1>Please complete the form:</h1>
+        
+        <form name = "infoform" method="post" action="contact.php">
+            
+            <table> 
+            <tr>
+                <td class = "label"><label for ="firstname">First Name:</label></td>
+                <td><input type = "text" name = "firstname" id = "firstname"/></td>
+            </tr>
+            
+            <tr>
+                <td class = "label"><label for ="lastname">Last Name:</label></td>
+                <td><input type = "text" name = "lastname" id = "lastname"/></td>
+            </tr>
+            
+            <tr>
+                <td class = "label"><label for ="street">Street:</label></td>
+                <td><input type = "text" size = "38" name = "street" id = "street"/></td>
+            </tr>
+            
+            <tr>
+                <td class = "label"><label for ="city">City:</label></td>
+                <td><input type = "text" size = "38" name = "city" id = "city"/></td>
+            </tr>
+            
+            <tr>
+            <td class = "label"><label for ="state">Your Home State:</label></td>
+            <td><select name = "state" id = "state">
+            <option value="select" selected>-Select-</option>
+            <option value="NJ">NJ</option>
+            <option value="PA">PA</option>
+            <option value="NY">NY</option> 
+            </select></td>
+            </tr>
+            
+            <tr>
+            <td class = "label"><label for ="zip">Zip Code:</label> </td>
+            <td><input type = "text" name = "zip" id = "zip"/> </td>
+            </tr>
+            
+            <tr>
+            <td class = "label"><label for ="gender">Select Gender:</label></td>
+            <td><input type = "radio" name = "gender" id = "male" value = "male"/> Male&nbsp;&nbsp;
+            <input type = "radio" name = "gender" id = "female" value = "female"/> Female</td>
+            </tr>
+            
+            <tr>
+            <td class = "label"><label for ="submit">&nbsp;</label></td>
+            <td><input type = "submit" name = "submit" id = "submit" value="Submit"/></td>
+            </tr>
+                
+            </table>
+        </form>
+    
+    
+   </body>
+</html>
