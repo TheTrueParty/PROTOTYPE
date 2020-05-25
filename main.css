@@ -187,7 +187,7 @@ aricle#hours #map {
 /******************side navigation menu***********************/
 
 nav#side {
-    background-color:#ed4cc2;  /*creates a bg color for for nav side section*/
+    background-color:#ff8300;  /*creates a bg color for for nav side section*/
     padding:2%;
     margin-left: 8%;  /*adds space in-between (gutter to the left*/
     float:left;  /*can be left or right*/
@@ -208,6 +208,7 @@ nav#side a:link, a:visited {
     text-decoration:none;  /*for removing or adding underlines - your preference*/
     }
 nav#side a:hover {
+    background-color:#ff8300;
     text-decoration:underline;  /*for removing or adding underlines - your preference*/
 }
 
