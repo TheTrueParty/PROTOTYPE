@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Alphabetized Database</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* Style for the list */
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      /* Style for the list items */
+      li {
+        margin: 0;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+      /* Style for the headings */
+      h2 {
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Alphabetized Database</h1>
+    <h2>A</h2>
+    <ul>
+      <li><a href="#">Art</a></li>
+      <li><a href="#">Astronomy</a></li>
+      <li><a href="#">Anthropology</a></li>
+    </ul>
+    <h2>B</h2>
+    <ul>
+      <li><a href="#">Biology</a></li>
+      <li><a href="#">Botany</a></li>
+      <li><a href="#">Business</a></li>
+    </ul>
+    <h2>C</h2>
+    <ul>
+      <li><a href="#">Chemistry</a></li>
+      <li><a href="#">Computer Science</a></li>
+      <li><a href="#">Cooking</a></li>
+    </ul>
+    <!-- more sections here -->
+  </body>
+</html>
