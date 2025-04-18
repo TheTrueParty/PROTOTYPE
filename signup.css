@@ -1,15 +1,19 @@
-/*CSS Document*/
+/* Dark Mode - Sign Up Sheet */
 
 body {
     margin: 2em;
+    background-color: #000000; /* Black background */
+    color: #e0e0e0; /* Light text */
+    font-family: Georgia, "Times New Roman", serif;
 }
 
 form {
     width: 600px;
-    background-color: #d5ebf7;
-    border: 2px solid #0f5b84;
+    background-color: #121212; /* Dark gray card */
+    border: 2px solid #0d47a1; /* Blue border */
     border-radius: 20px;
     padding: 2em;
+    box-shadow: 0 0 20px rgba(66, 165, 245, 0.3); /* Soft blue glow */
 }
 
 td {
@@ -19,4 +23,37 @@ td {
 td.label {
     padding-right: 1em;
     text-align: right;
+    color: #ff6f00; /* Orange labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.5em;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #42a5f5; /* Light blue border */
+    border-radius: 5px;
+}
+
+input[type="submit"],
+input[type="reset"],
+button {
+    background-color: #ff6f00; /* Orange button */
+    color: #ffffff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+    background-color: #e53935; /* Red on hover */
+    transition: background-color 0.3s;
 }
