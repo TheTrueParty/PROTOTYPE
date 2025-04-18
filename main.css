@@ -1,313 +1,84 @@
-/*CSS Document*/
-
-* {
-    margin: 0px; /*margin reset to wipe out margin and padding*/
-    padding: 0px;
-}
+//CSS Main//
 
 html {
-    background-color: #fdf6df; /*background peach color BEHIND the main body of page*/
+    background-color: #000000; /* Black background */
 }
 
-body {  /*main visual content of page will be centered in window*/
-    width: 960px; /*remember to put 'px' in CSS - not required in html*/
-    margin: 0 auto; 
-    background-color: #fff;
-            /*use white - for content that will use this white background*/
-    font-family: Calibri, Tahoma, Arial, sans-serif;
-            /*default font can be different than sample*/
-    -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.4);
-    -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.4);
-    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.4);
-}
-/******************2 header elements***********************/
-header#addresstop {
-    display: block;
-    background-color: #8acf28;
-    padding: .5% 2%;  /*use 2% on right and left*/
-    color: #fff; /*white text with the lime green background color*/
-}
-header#banner { /*since our header image is 960px wide and 240px high*/
-    height: 240px;
-}
-header#bannerpic {
-    height: 240px;
-}
-/******************top navigation menu***********************/
-nav#top {
-    background-color: #28d8f8;  /*creates a bg color for entire region*/
-    padding: .7% 2%;  /*top&bottom padding should be same as a:link padding if using a hover*/
-}
-nav#top li { 
-    display:inline;  /*property that puts list items on one line*/
-    line-height: 1.5em
-}
-nav#top ul {
-    list-style:none;  /*removes bullets*/
-}
-nav#top a:link, a:visited {      
-    color:#fff;  /*for all links*/
-    text-decoration:none;  /*remove underline*/
-    font-size:1.1em;
-    padding:.7% 1%;  /*provides padding around each link or button*/
-    font-weight:bold;
-    }
-nav#top a:hover {
-    background-color:#ff8300;  /*creates a bg color for hover state of button*/
-}
-/******************main content area***********************/
-section#container {  /*container for atricle and nav*/
-    padding: 2%;      /*adds space between content and edge of boy area (page)*/
-    overflow: hidden; /*keeps container from collapsing*/
-}
-
-/******************article content area***********************/
-
-article#homepage {
-    width: 68%;  /*80% - 12%*/
-    float: left;   /*float based on where it is compared to folowing element*/
-}
-article#homepage h1 {
-    font-size: 2.5em;
-    color: #1623a8;
-}
-article#homepage h2 {
-    font-size: 1.6em;
-    font-weight: normal;
-    color: #1623a8;
-}
-article#homepage p {
-    margin-top:1em;   /*use space before paragraph - use em for unit*/
-    line-height:150%;  /*use % to spread out line-spacing - 120% is default*/
-}
-article#homepage h3 {
-    margin-top: 1em;  /*use space before paragraph - use em for unit*/
-    line-height:150%;  /*use % to spread out line-spacing - 120% is default*/
-    color: #1623a8;  /*font color*/
-    background-color:rgba(57, 181, 254, 0.6);
-    padding: 4%;  /*use if adding a background color like sample*/
-    border-radius:10px 10px 10px 10px;  /*for round corners - copy code from cssmatic.com - Border Radius*/
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-}
-
-article#meet {
-    width: 68%;  /*80% - 12%*/
-    float: left;   /*float based on where it is compared to folowing element*/
-}
-article#meet h1 {
-    font-size: 2.5em;
-    color: #1623a8;
-}
-article#meet h2 {
-    font-size: 1.6em;
-    font-weight: normal;
-    color: #1623a8;
-}
-article#meet h3 a {
-    color: #1623a8;
-    font size: .95em
-}
-article#meet p {
-    margin-bottom:1em;   
-    line-height:150%;  
-}
-article#meet p a {
-  color: #1623a8;  
-}
-article#test {
-    width: 68%;  /*80% - 12%*/
-    float: left;   /*float based on where it is compared to folowing element*/
-}
-article#test h1 {
-    font-size: 2.5em;
-    color: #1623a8;
-}
-
-article#test blockquote {
-    margin-top: 1em;  /*use space before paragraph - use em for unit*/
-    line-height:160%;  /*use % to spread out line-spacing - 120% is default*/
-    font size:1.1em;
-    color:#1623a8;  /*font color*/
-    background-color:rgba(57, 181, 254, 0.6);
-    padding: 4%;  
-    border-radius:10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-}
-article#test blockquote .quote {
-    font-size: 4em;
-    font-family: Georgia, Cambria, "Times New Roman", Serif;
-    position: relative;
-    top:.5em;
-}
-
-article#test p a{
-    color: #1623a8
-}
-
-article#hours {
-    width: 68%;  /*80% - 12%*/
-    float: left;
-}
-
-article#hours h1 {
-    font-size: 2.5em;
-    color: #1623a8;
-}
-
-article#hours h2 {
-    font-size: 1.6em;
-    font-weight: normal;
-    color: #1623a8;
-}
-
-article#hours p {
-    margin-bottom:1em;   
-    line-height:150%;  
-}
-
-article#hours p.days {
-    border-bottom: 1px solid #1623a8;
-    margin-left: 2em;
-    width: 60%
-}
-
-article#hours p.days .times{
-    float:right;
-    text-align: right
-}
-
-
-aricle#hours #map {
-    margin-left: 2em;
-    margin-top: 1em;
-}
-
-/******************side navigation menu***********************/
-
-nav#side {
-    background-color:#ff8300;  /*creates a bg color for for nav side section*/
-    padding:2%;
-    margin-left: 8%;  /*adds space in-between (gutter to the left*/
-    float:left;  /*can be left or right*/
-    width: 20%;
-    border-radius:  20px 20px 20px 20px; /*for round corners - copy code from cssmatic.com - Border Radius*/
-    -moz-border-radius: 18px 18px 18px 18px;
-    -webkit-border-radius: 18px 18px 18px 18px;
-}
-nav#side ul {
-    list-style: none;  /*removes bullets*/
-}
-nav#side a:link, a:visited { 
-    display:block;
-    color:#fff;  /*for side links*/
-    font-family:;  /*use if different from default*/
-    padding:4.5% 0%;
-    font-weight:bold;
-    text-decoration:none;  /*for removing or adding underlines - your preference*/
-    }
-nav#side a:hover {
-    text-decoration:underline;  /*for removing or adding underlines - your preference*/
-}
-
-
-footer#copyright {
-    clear:both;  /*clears float after navside*/
-    padding:.5% 2%;
-    margin-top:12px;
-    background-color: #8acf28;
-    color:#fff;
-}
-footer#addressbottom{
-    display:none;  /*initially hides*/
-    padding:.5% 2%;
-    background-color: #8acf28;
-    color:#fff;
-}
-
-/************************ Media query for 870px breakpoint *************************************/
-
-@media screen and (max-width: 870px) {
-    
 body {
-    width: 100%;  /*fills the width of screen - fluid*/
-    margin: 0;  /*remove auto margin*/
-    box-shadow: none;  /*remove box shadow*/
-}
-nav#top li { 
-    line-height: 170%; /*helps avoid hover overlap when line breaks to 2 lines*/
-}
-header#banner {
-    height:240px;
-    overflow: hidden;  /*essentially crops the area that is not seen*/
-}
-article#homepage, article#meet, article#test, article#hours {
-    width: 58%;  /*article takes up less space so nav side has more*/
-}
-nav#side {
-    width: 30%;  /*add 10% proportion of width*/
-}
-article#homepage h3 {
-    margin-left: 0;
-    margin-bottom: 1em;
+    background-color: #000000;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0; /* Light gray text for contrast */
 }
 
-    
-    
-}/*closing media query bracket*/
-
-/************************ Media query for 520px breakpoint *************************************/
-
-@media screen and (max-width: 520px) {
-    
- 
 header#addresstop {
-    display: none;  /*hide address at top*/
+    background-color: #ff6f00; /* Orange */
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5em;
 }
 
-article#homepage, article#meet, article#test, article#hours {
-    float: none;  /*remove float*/
-    width: 100%;  /*sets width to 100% of container*/
-    
-}
-nav#side {
-    float: none;  /*remove float*/
-    width: 96%;  /*100% width, then subtract 4% (2% x 2) because of internal padding*/
-    margin-left: 0;
-    border-radius: ;  /*you may want to decrease radius amount*/
-
-}
-footer#addressbottom {
-    display:block;  /*make it display after being hidden*/
-    margin: auto;
-    width: 92%;
-    padding: .5% 2%;
-    background-color: #61d652;
-    color: #fff;
-    text-align: center;  /*may want to center it*/
-}
-footer#copyright {
-    text-align: center;  /*may want to center it*/
-    width: 92%;
-    margin: 12px auto 0 auto;
-    background-color: #61d652;
-}
-aricle#hours #map {
-    margin-left: 0em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+header#addresstop h2,
+header#addresstop h3 {
+    margin: 0;
 }
 
-aricle#hours #map iframe{
-    width: 100%    
-    }
-    
-    
-    
-}  /*closing media query bracket*/
+nav#top {
+    background-color: #0d47a1; /* Deep Blue */
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 120%;
+    padding: 0.5em;
+    text-align: center;
+}
 
+nav#top a:link,
+nav#top a:visited {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 1em;
+}
 
+nav#top a:hover {
+    background-color: #b71c1c; /* Red */
+}
 
-/************************ COLLAPSIBLE STYLINGS START HERE *************************************/
+main {
+    padding: 1em;
+}
 
+article {
+    padding: 1em;
+    border-bottom: 1px solid #333333;
+}
+
+article#homepage h1,
+article#meet h1,
+article#test h1,
+article#hours h1 {
+    color: #42a5f5; /* Light blue */
+    font-size: 150%;
+}
+
+article#homepage h2,
+article#meet h2,
+article#hours h2 {
+    color: #ff6f00; /* Orange */
+    font-size: 130%;
+}
+
+article#homepage h3,
+article#meet h3 {
+    color: #e53935; /* Bright Red */
+    font-size: 110%;
+    background-color: rgba(229, 57, 53, 0.2); /* Transparent red background */
+    padding: 0.5em;
+}
+
+article#homepage p,
+article#meet p,
+article#test p,
+article#hours p {
+    font-size:
